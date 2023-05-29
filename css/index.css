@@ -1,0 +1,65 @@
+.header, .footer{
+	height: 100vh;
+	color: blue;
+	text-align: center;
+	line-height: 100vh;
+}
+
+.playground{
+	height: 300vh;
+	background-color: gold;
+	position: relative;
+	.animation-container{
+		width: 100vw;
+		height: 100vh;
+		background-color: blanchedalmond;
+		top: 0;
+		left: 0;
+		position: sticky;
+		.list{
+			margin: auto;
+			display: flex;
+			flex-wrap: wrap;
+			list-style: none;
+			width: min(80vh, 80vw);
+			top: min(40vh, 40vw);
+			position: relative;
+			opacity: 60%;
+			background-color: white;
+			border-radius: min(2vh, 2vw);
+			.list-item{
+				width: min(8vh, 8vw);
+				height: min(8vh 8vw);
+				background: cyan;
+				margin: min(2vh, 2vw) min(1vh, 1vw);
+				border-radius: min(2vh, 2vw);
+				text-align: center;
+				line-height: min(8vh, 8vw);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-weight: bold;
+			}
+			.list-item:nth-child(8n+2),.list-item:nth-child(8n+7){
+				background: red;
+			}
+			.list-item:nth-child(8n+3),.list-item:nth-child(8n+6){
+				background: green;
+			}
+			.list-item:nth-child(8n+4),.list-item:nth-child(8n+5){
+				background: purple;
+			}
+		}
+	}
+}
+
+
+
+body::-webkit-scrollbar {
+  display: none;
+}
+/* 隐藏 IE、Edge 和 Firefox 的滚动条 */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

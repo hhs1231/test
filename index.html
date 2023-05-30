@@ -9,13 +9,14 @@
 
 	</head>
 	<body>
-		<div class="header">HEADER</div>
-		<div class="playground">
-			<div class="animation-container"><!--animation-container粘性定位-->
-				<div class="list">
-					<div data-order="0" class="list-item">1</div>
-					<div data-order="1" class="list-item">2</div>
-					<div data-order="2" class="list-item">3</div>
+		
+		<div name="header" class="header">HEADER</div>
+		<div name="animation" class="playground">
+			<div name="animation" class="animation-container"><!--animation-container粘性定位-->
+				<div name="animation" class="list">
+					<div data-order="0" class="list-item">java</div>
+					<div data-order="1" class="list-item">python</div>
+					<div data-order="2" class="list-item">嵌入式</div>
 					<div data-order="3" class="list-item">4</div>
 					<div data-order="3" class="list-item">6</div>
 					<div data-order="2" class="list-item">7</div>
@@ -33,6 +34,9 @@
 			</div>
 		</div>
 		<div class="footer">FOOTER</div>
+		<span class="trailing"></span>
 	</body>
-	<script src="./js/index.js"></script>
+	<script src="./js/index/index.js"></script>
+	<script src="./js/index/trailing.js"></script>
+	<script src="./js/index/ddtx.js"></script>
 </html>

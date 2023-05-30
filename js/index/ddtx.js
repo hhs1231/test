@@ -1,15 +1,7 @@
-const items = document.querySelectorAll('.list-item');
-const playGround = document.querySelector('.playground');
-const list = document.querySelector('.list');
-
-var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-if (isMobile) {
-  console.log("This is a mobile device");
-  alert("手机");
-} else {
-  console.log("This is not a mobile device");
-  alert("电脑");
-}
+//钉钉官网特效
+const items = document.querySelectorAll('.list-item')
+const playGround = document.querySelector('.playground')
+const list = document.querySelector('.list')
 
 function createAnimation(scrollStart,scrollEnd,valueStart,valueEnd){//主要函数，判断当前位置
 	return function(scroll){
@@ -76,3 +68,4 @@ updateMap()
 updateStyles()
 
 window.addEventListener('scroll',updateStyles)
+

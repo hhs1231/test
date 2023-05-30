@@ -4,8 +4,20 @@
 	text-align: center;
 	line-height: 100vh;
 }
-
-.playground{
+/* 应用于电脑 */
+@media screen and (min-width: 768px) {
+	
+	
+  }
+  
+  /* 应用于手机 */
+  @media screen and (max-width: 767px) {
+	body {
+	  font-size: 14px;
+	}
+  }
+  
+  .playground{
 	height: 300vh;
 	background-color: black;
 	position: relative;
@@ -52,7 +64,6 @@
 		}
 	}
 }
-
 
 
 body::-webkit-scrollbar {

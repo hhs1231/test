@@ -3,6 +3,17 @@
 	color: blue;
 	text-align: center;
 	line-height: 100vh;
+	background-image: url("../img/backGround02.jpg");
+	background-size: cover;
+	
+}
+
+/*背景图片*/
+.backGround{
+	width: 100vw;
+	height: 100vh;
+	background-color: #00ffff;
+	opacity: 0.5;
 }
 /* 应用于电脑 */
 @media screen and (min-width: 768px) {
@@ -67,10 +78,14 @@
 
 
 body::-webkit-scrollbar {
-  display: none;
+	margin: 0px;
+	padding: 0px;
+  	display: none;
 }
 /* 隐藏 IE、Edge 和 Firefox 的滚动条 */
 body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+	margin: 0px;
+	padding: 0px;
+  	-ms-overflow-style: none;  /* IE and Edge */
+  	scrollbar-width: none;  /* Firefox */
 }

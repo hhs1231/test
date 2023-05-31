@@ -1,5 +1,5 @@
-const background = document.querySelector('.header');
-var files = ["00", "01", "02", "03", "04", "05", "06" ,"07" ,"08" ,"09"] //遍历的文件全push进这个数组，方便后续操作（记住，push进去的是文件路径，后续需读取）
+const headerbg = document.querySelector('.header');
+var files = ["00.jpg", "01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg", "06.jpg" ,"07.jpg" ,"08.jpg" ,"09.jpg"]
 var i = 0;
 
 window.onload = function(){
@@ -7,15 +7,26 @@ window.onload = function(){
 }
 
 function changeBackGround(){
-    var bg = background.style.backgroundImage.slice(-6,-4);
+    var bg = getComputedStyle(headerbg, "style").backgroundImage.slice(-8,-6);
+    alert(bg)
+    while(1){
+        if(i==bg){
+            break;
+        }else if(i >= files.length){
+            i=0;
+        }else{
+            i++;
+        }
+    }
     if(i == bg){
         i++;
         if(i >= files.length){
             i=0;
         }
     }
-    background.style.background = "url(https://github.com/hhs1231/test/tree/master/img/background/" +files[i] + ".jpg) no-repeat 0 center";  
-    window.setTimeout(changeBackGround, 1000)
+    alert(files[i]);
+    background.style.background = "url(https://github.com/hhs1231/test/tree/master/img/background/" +files[i] + ") no-repeat 0 center";  
+    window.setTimeout("changeBackGround()", 1000)
 }
 
 

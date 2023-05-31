@@ -1,19 +1,47 @@
 .header, .footer{
 	height: 100vh;
-	color: blue;
 	text-align: center;
+	color: white;
 	line-height: 100vh;
-	background-image: url("../img/backGround02.jpg");
+	background: url("../img/background/09.jpg") no-repeat 0 center;
 	background-size: cover;
-	
 }
 
 /*背景图片*/
 .backGround{
 	width: 100vw;
 	height: 100vh;
-	background-color: #00ffff;
-	opacity: 0.5;
+	background-color: rgba(0, 255, 255,0.5);
+}
+
+.header-choose{
+	width: 200px;
+	height: 80px;
+	line-height: 80px;
+	float: right;
+}
+
+.menu{
+	width: 80px;
+	float: left;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-style: inherit;
+}
+
+.header-title{
+	padding-top: 200px;
+	height: 50px;
+	width: 100vw;
+	font-size: 40px;
+	line-height: 50px;
+}
+
+.header-motto{
+	width: 100vw;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 /* 应用于电脑 */
 @media screen and (min-width: 768px) {

@@ -14,7 +14,7 @@ function changeBackGround(){
             i=0;
         }
     }
-    background.style.background = "url(../img/background/" +files[i] + ".jpg) no-repeat 0 center";  
+    background.style.background = "url(https://github.com/hhs1231/test/tree/master/img/background/" +files[i] + ".jpg) no-repeat 0 center";  
     window.setTimeout(changeBackGround, 1000)
 }
 

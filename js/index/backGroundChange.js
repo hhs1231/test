@@ -30,7 +30,7 @@ function changeBackGround(headerbg, files, i){
         function(){
             changeBackGround(headerbg, files, i);
         }, 
-        60000
+        7200000
     );
 }
 

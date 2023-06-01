@@ -3,7 +3,8 @@
 	text-align: center;
 	color: white;
 	line-height: 100vh;
-	background: url("https://github.com/hhs1231/test/tree/master/img/background/09.jpg") no-repeat 0 center;
+	background:  center;
+	background-image: url("../img/background/09.jpg");
 	background-size: cover;
 }
 

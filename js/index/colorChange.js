@@ -1,12 +1,12 @@
 //定时更改颜色滤罩
-const background = document.querySelector(".backGround");
-var color = background.style.backgroundColor;
-
-window.onload = function(){ 
-    changeColor();
+changeCr();
+function changeCr(){
+    const background = document.querySelector(".backGround");
+    var color = background.style.backgroundColor;
+    changeColor(background, color);
 }
 //颜色变化函数
-function changeColor(){
+function changeColor(background, color){
     //产生rgb的值
     var rgb=color;
     while(1){
@@ -22,7 +22,11 @@ function changeColor(){
     }
     //toString(radix) 把数字转化为radix（取值范围2~36）进制值表示的字符串
     background.style.backgroundColor=rgb;
-    window.setTimeout("changeColor()",10000);
-    
+    window.setTimeout(
+        function(){
+            changeColor(background, color);
+        },
+        10000
+    );
     //setTimeout() 方法用于在指定的毫秒数后调用函数或计算表达式。
 }

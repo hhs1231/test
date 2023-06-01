@@ -8,6 +8,34 @@
 	background-size: cover;
 }
 
+.header{
+	background-image: url("../img/background/00.jpg");
+}
+.header{
+	background-image: url("../img/background/01.jpg");
+}
+.header{
+	background-image: url("../img/background/02.jpg");
+}
+.header{
+	background-image: url("../img/background/03.jpg");
+}
+.header{
+	background-image: url("../img/background/04.jpg");
+}
+.header{
+	background-image: url("../img/background/05.jpg");
+}
+.header{
+	background-image: url("../img/background/06.jpg");
+}
+.header{
+	background-image: url("../img/background/07.jpg");
+}
+.header{
+	background-image: url("../img/background/08.jpg");
+}
+
 /*背景图片*/
 .backGround{
 	width: 100vw;

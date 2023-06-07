@@ -1,10 +1,10 @@
-.header,.footer{
+.header{
 	height: 100vh;
 	text-align: center;
 	color: white;
 	line-height: 100vh;
 	background:  center;
-	background-image: url("../img/background/09.jpg");
+	background-image: url("../img/background/08.jpg");
 	background-size: cover;
 }
 
@@ -36,19 +36,19 @@
 	background-image: url("../img/background/08.jpg");
 }
 
-/*背景图片*/
-.backGround{
+/* 菜单栏粘性定位 *//* background-color: rgba(0, 255, 255,0.5); */
+.background{
 	width: 100vw;
 	height: 100vh;
-	/* background-color: rgba(0, 255, 255,0.5); */
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 .header-choose{
-	padding-top: 40px;
-	width: 500px;
+	position: fixed;
+	top: 40px;
+	right: 5vw;
 	height: 40px;
 	line-height: 80px;
-	float: right;
 }
 
 .menu{
@@ -58,7 +58,7 @@
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-style: inherit;
 	padding-top: 5px;
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
 .menu:hover{
@@ -156,6 +156,14 @@
 
 .button-all:hover{
 	background-color: rgba(234, 0, 255, 0.5);
+}
+
+.footer{
+	background-color: red;
+	height: max(300vh, 1000px);
+	background: center;
+	background-image: url("../img/background/08.jpg");
+	background-size: cover;
 }
 /* 应用于电脑 */
 @media screen and (min-width: 768px) {

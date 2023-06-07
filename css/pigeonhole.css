@@ -1,0 +1,63 @@
+.header-choose{
+	position: fixed;
+	top: 40px;
+	right: 5vw;
+	height: 40px;
+	line-height: 80px;
+}
+
+.menu{
+	width: 90px;
+	height: 35px;
+	float: left;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-style: inherit;
+	padding-top: 5px;
+	border-radius: 10px;
+}
+
+.menu:hover{
+	background-color: rgba(255, 0, 0, 0.5);
+}
+
+.menu-exterior-gap{
+	width: 20px;
+	height: 30px;
+	float: left;
+}
+
+.menu-interior-gap{
+	width: 5px;
+	height: 30px;
+	float: left;
+}
+
+.menu-icon{
+	float: left;
+	width: 30px;
+	height: 30px;
+	background-size: 30px;
+}
+
+.menu-name{
+	float: left;
+	width: 50px;
+	height: 30px;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+
+body::-webkit-scrollbar {
+	margin: 0px;
+	padding: 0px;
+  	display: none;
+}
+/* 隐藏 IE、Edge 和 Firefox 的滚动条 */
+body {
+	margin: 0px;
+	padding: 0px;
+  	-ms-overflow-style: none;  /* IE and Edge */
+  	scrollbar-width: none;  /* Firefox */
+	cursor: url('../img/mousePointer/normal.cur'),default;
+}

@@ -9,23 +9,7 @@ function changeBg(){
 }
 
 function changeBackGround(headerbg, files, i){
-    var bg = window.getComputedStyle(headerbg).backgroundImage.slice(-8,-6);
-    while(1){
-        if(i==bg){
-            break;
-        }else if(i >= files.length){
-            i=0;
-        }else{
-            i++;
-        }
-    }
-    if(i == bg){
-        i++;
-        if(i >= files.length){
-            i=0;
-        }
-    }
-    headerbg.style.backgroundImage = "url(./img/background/" +files[i] + ")"; 
+    headerbg.style.backgroundImage = "url(./img/background/" +Math.floor(Math.random()*15) + ".jpg)"; 
     window.setTimeout(
         function(){
             changeBackGround(headerbg, files, i);

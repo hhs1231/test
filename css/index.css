@@ -4,51 +4,32 @@
 	color: white;
 	line-height: 100vh;
 	background:  center;
-	background-image: url("../img/background/08.jpg");
 	background-size: cover;
-}
-
-.header{
-	background-image: url("../img/background/00.jpg");
-}
-.header{
-	background-image: url("../img/background/01.jpg");
-}
-.header{
-	background-image: url("../img/background/02.jpg");
-}
-.header{
-	background-image: url("../img/background/03.jpg");
-}
-.header{
-	background-image: url("../img/background/04.jpg");
-}
-.header{
-	background-image: url("../img/background/05.jpg");
-}
-.header{
-	background-image: url("../img/background/06.jpg");
-}
-.header{
-	background-image: url("../img/background/07.jpg");
-}
-.header{
-	background-image: url("../img/background/08.jpg");
 }
 
 /* 菜单栏粘性定位 *//* background-color: rgba(0, 255, 255,0.5); */
 .background{
 	width: 100vw;
 	height: 100vh;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header-time{
+	float: right;
+	width: 280px;
+	height: 40px;
+	line-height: 40px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 20px;
 }
 
 .header-choose{
 	position: fixed;
 	top: 40px;
-	right: 5vw;
+	left: 5vw;
 	height: 40px;
 	line-height: 80px;
+	width: 90vw;
 }
 
 .menu{
@@ -90,10 +71,32 @@
 	height: 30px;
 	font-size: 20px;
 	line-height: 30px;
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* 正常浏览器 */
+}
+
+.list{
+	border-radius: 10px;
+	float: left;
+}
+
+.menu:hover+.menu-list, .menu-list:hover{
+	display: block;
+	background-color: rgba(255, 0, 0, 1);
+}
+
+.menu-list{
+	display: none;
 }
 
 .header-text{
 	padding-top: 200px;
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* 正常浏览器 */
 }
 
 .header-title{
@@ -101,6 +104,10 @@
 	width: 100vw;
 	font-size: 40px;
 	line-height: 50px;
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* 正常浏览器 */
 }
 
 .header-motto{
@@ -109,6 +116,10 @@
 	line-height: 40px;
 	font-size: 20px;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* 正常浏览器 */
 }
 
 .header-button{
@@ -123,7 +134,6 @@
 	padding-top: 10px;
 	height: 40px;
 	border-radius: 40px;
-	background-color: rgba(68, 68, 68, 0.5);
 	border-style: solid;
 	float: left;
 }
@@ -152,6 +162,10 @@
 	height: 30px;
 	line-height: 30px;
 	float: left;
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* 正常浏览器 */
 }
 
 .button-all:hover{
@@ -165,6 +179,38 @@
 	background-image: url("../img/background/08.jpg");
 	background-size: cover;
 }
+
+.sakura-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	overflow: hidden;
+	z-index: -1;
+  }
+  
+  .sakura {
+	position: absolute;
+	display: block;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 20px;
+	height: 20px;
+	bottom: -20px;
+	animation: sakura-fall linear infinite;
+  }
+  
+  @keyframes sakura-fall {
+	0% {
+	  transform: translate3d(0, -200%, 0);
+	}
+  
+	100% {
+	  transform: translate3d(0, 100%, 0);
+	}
+  }
 /* 应用于电脑 */
 @media screen and (min-width: 768px) {
 	

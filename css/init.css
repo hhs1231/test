@@ -1,0 +1,71 @@
+.init{
+	height: 100vh;
+	width: 100vw;
+	line-height: 100vh;
+	text-align: center;
+}
+
+.welcome{
+	display: inline-block;
+	animation: welcome 3467ms ease-in-out infinite;
+	animation-delay: var(--delay);
+	font-size: 100px; 
+    text-shadow: 5px 5px 5px black, 0px 0px 2px red, 2px 2px 3px green;  /* 使用了 字体阴影，然后把字体颜色调成背景颜色，就是空心字了*/
+    color: white;
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* 正常浏览器 */
+}
+
+@keyframes welcome {
+	0%,75%{
+		transform: translateY(0);
+	}
+	87.5%{
+		transform: translateY(-50px);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+
+body::-webkit-scrollbar {
+	margin: 0px;
+	padding: 0px;
+  	display: none;
+}
+/* 隐藏 IE、Edge 和 Firefox 的滚动条 */
+body {
+	margin: 0px;
+	padding: 0px;
+  	-ms-overflow-style: none;  /* IE and Edge */
+  	scrollbar-width: none;  /* Firefox */
+	cursor: url('../img/mousePointer/normal.cur'),default;
+}
+
+body{
+    overflow: hidden;
+    /* 设置容器尺寸 - 原理1 */
+    width: 100vw;
+    height: 100vh;
+    /* 背景渐变色 - 原理2 */
+    background: linear-gradient(-45deg/*45度角*/, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    /* 背景尺寸 - 原理3 */
+    background-size: 400vw 400vh;
+    /* 循环动画 - 原理4 */
+    animation: gradientBG 5s ease infinite;
+}
+
+  /* 动画，控制背景 background-position */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

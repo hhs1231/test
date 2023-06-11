@@ -9,7 +9,7 @@ function changeBg(){
 }
 
 function changeBackGround(headerbg, files, i){
-    headerbg.style.backgroundImage = "url(./img/background/" +Math.floor(Math.random()*15) + ".jpg)"; 
+    headerbg.style.backgroundImage = "url(../img/background/" +Math.floor(Math.random()*15) + ".jpg)"; 
     window.setTimeout(
         function(){
             changeBackGround(headerbg, files, i);

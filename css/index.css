@@ -1,3 +1,4 @@
+
 .header{
 	height: 100vh;
 	text-align: center;
@@ -7,7 +8,7 @@
 	background-size: cover;
 }
 
-/* 菜单栏粘性定位 *//* background-color: rgba(0, 255, 255,0.5); */
+/* background-color: rgba(0, 255, 255,0.5); */
 .background{
 	width: 100vw;
 	height: 100vh;
@@ -20,6 +21,8 @@
 	height: 40px;
 	line-height: 40px;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 5px 5px 5px black, 0px 0px 2px red, 2px 2px 3px green;  /* 使用了 字体阴影，然后把字体颜色调成背景颜色，就是空心字了*/
+	color: beige;
 	font-size: 20px;
 }
 
@@ -37,6 +40,8 @@
 	height: 35px;
 	float: left;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 5px 5px 5px black, 0px 0px 2px red, 2px 2px 3px green;  /* 使用了 字体阴影，然后把字体颜色调成背景颜色，就是空心字了*/
+	color: beige;
 	font-style: inherit;
 	padding-top: 5px;
 	border-radius: 10px;
@@ -79,16 +84,61 @@
 
 .list{
 	border-radius: 10px;
+	height: 50px;
+    width: 100px;
+    position:relative;
 	float: left;
 }
 
-.menu:hover+.menu-list, .menu-list:hover{
-	display: block;
-	background-color: rgba(255, 0, 0, 1);
+.list:hover{
+	.menu-list{
+		display: block;
+		animation-name: froms;
+		animation-duration: 1s;
+	}
 }
 
 .menu-list{
-	display: none;
+	width: 90px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: rgba(255, 0, 255, 0.5);
+	color: black;
+    position:absolute;
+    display: none;
+	overflow: hidden;
+	animation-name: backs;
+	animation-duration: 1s;
+}
+
+@keyframes backs {
+	from{
+		height: 160px;
+	}
+	to{
+		height: 0px;
+	}
+}
+
+@keyframes froms {
+	from{
+		height: 0px;
+	}
+	to{
+		height: 160px;
+	}
+	
+}
+
+.menu-list div{
+	width: 90px;
+	border-radius: 10px;
+	line-height: 40px;
+}
+
+.menu-list div:hover{
+	background-color: rgba(127, 0, 127, 0.5);
+	display: block;
 }
 
 .header-text{
@@ -100,10 +150,11 @@
 }
 
 .header-title{
-	height: 50px;
+	height: 80px;
 	width: 100vw;
-	font-size: 40px;
+	font-size: 80px;
 	line-height: 50px;
+	text-shadow: 10px 10px 10px black;
 	-webkit-user-select: none; /* Safari */
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* IE10+/Edge */
@@ -116,6 +167,7 @@
 	line-height: 40px;
 	font-size: 20px;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	text-shadow: 5px 5px 5px black, 0px 0px 2px black;
 	-webkit-user-select: none; /* Safari */
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* IE10+/Edge */
